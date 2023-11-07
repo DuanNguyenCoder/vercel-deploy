@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
-const product_router = require("./routes/product");
-const dbConnect = require("./db/connect");
+const product_router = require("./src/routes/product");
+const dbConnect = require("./src/db/connect");
 
 // allow send json resquest
 app.use(express.json());
